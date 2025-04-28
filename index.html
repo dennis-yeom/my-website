@@ -1,14 +1,96 @@
-
+<!-- declaration to define this document has HTML5 -->
 <!DOCTYPE html>
+
+<!--
+<html> element is **root** element.
+all content of webpage lives in the tag. 
+lang is an attribute of the html object. 
+-->
 <html lang="en">
+
+<!--
+head element contain meta-info abt the webpage.
+e.g.: character encoding, page title, link to css
+-->
 <head>
+
+  <!--
+  set character encoding to UTF-8.
+  important for proper text rendering.
+  UTF-8 is most comman character encoding on the web.
+  -->
   <meta charset="UTF-8" />
+
+  <!--
+  the name "viewport" is special, predefined keyword in HTML.
+  browsers use it to know how to sent up page's scaling/sizing on the screen.
+
+  content describes rules for the "viewport".
+  "width=device-width" = set page width equal to device's screen width.
+  "initial-scale=1.0" = set initial zoom level to 1x.
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hello, world!</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!--
+  <title> tag defines title of page.
+  appears on the tab or window title
+  -->
+  <title>i am title!</title>
+
+  <!--
+  tell browser where to find the CSS file for styling
+  -->
+  <link rel="stylesheet" href="style/style.css" />
+
 </head>
+
+
 <body>
-  <h1>Hello, World!</h1>
+
+  <h1>Header 1</h1>
+
+  <h2>Header 2</h2>
+
+  <p>This is a regular paragraph of text. It automatically has some margin (space) before and after it.</p>
+
+  <p>
+    You can also make text <strong>bold</strong> using the <strong>&lt;strong&gt;</strong> tag,
+    or <em>italic</em> using the <em>&lt;em&gt;</em> tag.
+  </p>
+
+  <ul>
+    <li>This is a list item</li>
+    <li>Another list item</li>
+    <li>Lists are great for grouping things!</li>
+  </ul>
+
+  <ol>
+    <li>First item in an ordered list</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+
+  <a href="https://www.example.com">Visit Example.com</a>
+
+  <!-- 
+  <br> inserts a line break (like pressing Enter).
+  It doesn’t need a closing tag.
+  -->
+  <br />
+
+  <img src="assets/images/shunckle.png" alt="shunkle">
+
+  <!-- 
+  <script> loads external JavaScript.
+  'src="script.js"' points to a JavaScript file in the same folder as this HTML file.
+  
+  When the browser reaches this line:
+    - It pauses building the page for a moment.
+    - It fetches "script.js".
+    - It runs any JavaScript code inside "script.js".
+  -->
   <script src="script.js"></script>
+
 </body>
+
 </html>
