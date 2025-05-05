@@ -1,24 +1,13 @@
 <!-- declaration to define this document has HTML5 -->
 <!DOCTYPE html>
 
-<!--
-<html> element is **root** element.
-all content of webpage lives in the tag. 
-lang is an attribute of the html object. 
--->
+<!--<html> element is **root** element. all content of webpage lives in the tag. lang is an attribute of the html object. -->
 <html lang="en">
 
-<!--
-head element contain meta-info abt the webpage.
-e.g.: character encoding, page title, link to css
--->
+<!--head element contain meta-info abt the webpage. e.g.: character encoding, page title, link to css -->
 <head>
 
-  <!--
-  set character encoding to UTF-8.
-  important for proper text rendering.
-  UTF-8 is most comman character encoding on the web.
-  -->
+  <!-- set character encoding to UTF-8. important for proper text rendering. UTF-8 is most comman character encoding on the web. -->
   <meta charset="UTF-8" />
 
   <!--
@@ -31,15 +20,10 @@ e.g.: character encoding, page title, link to css
   -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!--
-  <title> tag defines title of page.
-  appears on the tab or window title
-  -->
+  <!-- <title> tag defines title of page. appears on the tab or window title -->
   <title>Dennis | Home</title>
 
-  <!--
-  tell browser where to find the CSS file for styling
-  -->
+  <!-- tell browser where to find the CSS file for styling-->
   <link rel="stylesheet" href="style/style.css" />
 
 </head>
@@ -49,45 +33,36 @@ e.g.: character encoding, page title, link to css
 
   <h1>Header 1</h1>
 
-  <nav>
-    <ul>
-      <li><a href="about/">About Me</a></li>
-      <li><a href="projects/">Tech Projects</a></li>
-      <li><a href="music/">Music</a></li>
-    </ul>
-  </nav>
+  <!-- <header> and <main> are semantic tags. do not change anything. for organization. -->
+  <!-- header -->
+  <header>
+    
+    <!-- make a new nav class called navbar -->
+    <nav class = "navbar">
+
+      <!-- make an unordered list class called nav-links -->
+      <ul class = "nav-links">
+
+        <!-- list item, link, display name -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about/">About Me</a></li>
+        <li><a href="projects/">Tech Projects</a></li>
+        <li><a href="music/">Music</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- main: identifies the main contents of the web page. search engines look in here to determine content of pages.  -->
+  <main>
+    <h2>Header 2</h2>
+
+    <p>This is a regular paragraph of text. It automatically has some margin (space) before and after it.</p>
+  </main>
+
   
-
-  <h2>Header 2</h2>
-
-  <p>This is a regular paragraph of text. It automatically has some margin (space) before and after it.</p>
-
-  <p>
-    You can also make text <strong>bold</strong> using the <strong>&lt;strong&gt;</strong> tag,
-    or <em>italic</em> using the <em>&lt;em&gt;</em> tag.
-  </p>
-
-  <ul>
-    <li>This is a list item</li>
-    <li>Another list item</li>
-    <li>Lists are great for grouping things!</li>
-  </ul>
-
-  <ol>
-    <li>First item in an ordered list</li>
-    <li>Second item</li>
-    <li>Third item</li>
-  </ol>
-
-  <a href="https://www.example.com">Visit Example.com</a>
-
-  <!-- 
-  <br> inserts a line break (like pressing Enter).
-  It doesn’t need a closing tag.
-  -->
-  <br />
-
-  <img src="assets/images/shunckle.png" alt="shunkle">
 
   <!-- 
   <script> loads external JavaScript.
